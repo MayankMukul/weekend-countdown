@@ -26,8 +26,6 @@ body {
     display: flex;
     flex-direction: column;
     background-color: rgba(0, 0, 0, 0.5);
-    
-   
 }
 
 .title {
@@ -39,20 +37,18 @@ body {
 }
 
 .col {
-    width: 700px;
-    
+    width: 70%;
     text-align: center;
-    
     display: flex;
     justify-content: center;
     margin: 60px auto;
 }
 
 .col div {
-  
     width: 240px;
+    min-width: 100px;
     text-align: center;
-    
+    margin: auto;
 }
 
 input {
@@ -66,3 +62,10 @@ input {
     color: white;
 }
 
+@media screen and (max-width:490px) {
+    .col{
+        display: block;
+        text-align: center;
+        
+    }
+}
